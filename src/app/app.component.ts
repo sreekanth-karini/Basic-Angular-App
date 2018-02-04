@@ -9,7 +9,7 @@ export class AppComponent {
 	constructor(){
 		this.printingMessage('sadhana');
 	}
-  title = 'sample Application';
+  title = 'Angular 4 Application';
   clickedcompany='';
   clickednumber= 0;
   clickedperson={};
