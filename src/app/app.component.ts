@@ -13,7 +13,7 @@ export class AppComponent {
   clickedcompany='';
   clickednumber= 0;
   clickedperson={};
-  companies = ["Hooper Labs","IBM","Infosys","HSBC","TCS","Tech Mahindra"];
+  companies = ["Hooper Labs","IBM","Infosys","HSBC","TCS","Tech Mahindra","Google"];
   numbers = [22,33,44,55,66,77];
   details = {name:'sadhana', number:22};
   pdetails = {name:'sreekanth',number:33};
