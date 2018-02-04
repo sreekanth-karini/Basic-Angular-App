@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+    <h2>List Of Companies (Static)</h2>
+      <ul>
+        <li>Hooper Labs</li>
+        <li>IBM</li>
+        <li>Infosys</li>
+        <li>Hsbc</li>
+        <li>DELL</li>
+      </ul>
+<h2>List Of Companies (Dynamic)</h2>
+    <input type="text" name="" placeholder="name" [(ngModel)]="clickedcompany">
+    {{clickedcompany}}
+    <ul>
+      <li *ngFor = "let company of companies" (click)="printingCompany(company)">
+      {{company}}
+
+      </li>
+    </ul>
+
+<h2>List Of Numbers (Dynamic)</h2>
+    <input type="number" name="" placeholder="number" [(ngModel)]="clickednumber">
+    {{clickednumber}}
+    <ul>
+      <li *ngFor = "let n of numbers" (click)="printingNumber(n)">
+        {{n}}
+      </li>
+    </ul>
+
+<h2>Details (Dynamic)</h2>
+    <input type="text" name="" [(ngModel)]="details.name">
+    <input type="number" name="" [(ngModel)]="details.number">
+    <p>{{details.name}}</p>
+    <p>{{details.number}}</p>
+    <p>{{pdetails.name}}</p>
+    <p>{{pdetails.number}}</p>
+
+<h2>Classmates (Dynamic)</h2>
+    <input type="text" name="" [(ngModel)]="clickedperson.name">
+    <input type="number" name="" [(ngModel)]="clickedperson.number">
+    <ul>
+      <li *ngFor = "let m of classmates" (click)="printingMember(m)">
+        <p>{{m.name}} - {{m.number}}</p>
+      </li>
+    </ul>
+    <button (click)="printingMessage('sadhana')">
+    click
+    </button>
+</div>
+
+
